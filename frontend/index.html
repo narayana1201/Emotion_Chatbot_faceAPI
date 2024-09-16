@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="FR-header"></div>
+    <div class="FR-body">
+        <div class="FR-main">
+            <p class="FR-title">Emotion Detection</p>
+            <div class="FR-container">
+                <video class="FR-div" autoplay muted></video>
+                <canvas class="FR-canvas"></canvas>
+            </div>
+            <input class="FR-data" readonly />
+            <div class="FR-btn-row">
+                <button class="FR-start" id="FR-btn">start</button>
+                <button class="FR-stop" id="FR-btn">end</button>
+            </div>
+        </div>
+        <div class="FR-aside">
+            <div class="FR-chatInterface">
+                <ul class="FR-chat">
+                    <li class="received">
+                        <p>hi</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="FR-input">
+                <input class="chat-input" />
+                <img src="assets/micoff.svg" alt="Mic" class="speech-recognition" />
+                <img src="assets/send.svg" alt="sendicon" class="sendBtn" />
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/face-api.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
